@@ -10,6 +10,10 @@ namespace cis237inclass3
     {
         static void Main(string[] args)
         {
+            // this is a test!
+
+            // only to explain the branching
+
             //Create a couple of instances of the Employee class
             Employee employee1 = new Employee("Dave", "Barnes", 537.00m);
             Employee employee2 = new Employee("Joe", "Somebody", 125.50m);
