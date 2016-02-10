@@ -9,9 +9,9 @@ namespace cis237inclass3
     class Employee
     {
         //Backing fields
-        private string firstName;
-        private string lastName;
-        private decimal weeklySalary;
+        protected string firstName;
+        protected string lastName;
+        
 
         //properties for the backing fields
         public string FirstName
@@ -26,11 +26,11 @@ namespace cis237inclass3
         }
         
 
-        //One Method that is public. Can be accessed from other classes
-        public string GetFullName()
-        {
-            return this.firstName + " " + this.lastName;
-        }
+        ////One Method that is public. Can be accessed from other classes
+        //public string GetFullName()
+        //{
+        //    return this.firstName + " " + this.lastName;
+        //}
 
         //Override method that will print all of the fields
         //It overrides the default ToString that every object gets for free!

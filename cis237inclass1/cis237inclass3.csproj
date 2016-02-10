@@ -45,6 +45,7 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryEmployees.cs" />
     <Compile Include="StaticUserInterface.cs" />
     <Compile Include="UserInterface.cs" />
   </ItemGroup>
