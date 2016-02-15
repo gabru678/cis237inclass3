@@ -42,8 +42,10 @@ namespace cis237inclass3
 
             
             //Instanciate some employees into the array
-            employees[0] = new Employee("James", "Kirk");
-            employees[1] = new Employee("Jean-Luc", "Picard");
+
+            employees[0] = new HourlyEmployee("James", "Kirk", 550m);
+            // we cna store child parameter objects in an array of the parent array
+            employees[1] = new SalaryEmployees("Jean-Luc", "Picard", 2225.21m);
             employees[2] = new Employee("Benjamin", "Sisko");
             employees[3] = new Employee("Kathryn", "Janeway");
             employees[4] = new Employee("Johnathan", "Archer");
