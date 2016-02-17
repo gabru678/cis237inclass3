@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237inclass3
 {
-    class Employee
+    abstract class Employee
     {
         //Backing fields
         protected string firstName;

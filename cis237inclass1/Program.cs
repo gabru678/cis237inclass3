@@ -44,12 +44,17 @@ namespace cis237inclass3
             //Instanciate some employees into the array
 
             employees[0] = new HourlyEmployee("James", "Kirk", 550m);
-            // we cna store child parameter objects in an array of the parent array
+            // we can store child parameter objects in an array of the parent array
             employees[1] = new SalaryEmployees("Jean-Luc", "Picard", 2225.21m);
             employees[2] = new Employee("Benjamin", "Sisko");
             employees[3] = new Employee("Kathryn", "Janeway");
             employees[4] = new Employee("Johnathan", "Archer");
-            
+
+            employees[5] = new HourlyEmployee("James", "Kirk", 550m);
+            employees[6] = new SalaryEmployees("Jean-Luc", "Picard", 2225.21m);
+            employees[7] = new Employee("Benjamin", "Sisko");
+            employees[8] = new Employee("Kathryn", "Janeway");
+            employees[9] = new Employee("Johnathan", "Archer");
 
             ////Lets use the new CSVProcessor we made!
             //CSVProcessor csvProcesor = new CSVProcessor();
