@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace cis237inclass3
 {
-    abstract class Employee
+    // This is an abstract class becuse we added the keyword before the word class
+    abstract class Employee :INterfaceEmployee
     {
         //Backing fields
         protected string firstName;
@@ -37,6 +38,21 @@ namespace cis237inclass3
         public override string ToString()
         {
             return this.firstName + " " + this.lastName + " ";
+        }
+
+        //  an abstract MUST have no body, include a semicolon.  Means that it must be created in the child
+        // and the child must create a function for it
+        // we made this method abstract because based on the information that this class has
+        // we have no idea how to calculate a salary, let alone format one
+        // declaring it abstract leaves the implementation details to the child class to figure out.
+        public abstract string GetFormattedSalary();
+
+        // the virtual declaration means that is must have a method body, even if it is empty
+        // a cirtal mehid CAN be overridden i the child classes, but is not required to be.
+        // We made this methdo virtual
+        public virtual string GetLastNameFirstName()
+        {
+            return this.lastName + ", " + this.firstName;
         }
 
         //One method that is private. Can only be called from inside this class
